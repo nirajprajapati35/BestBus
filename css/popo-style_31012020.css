@@ -1,0 +1,2524 @@
+/* 
+ * ========================
+ *    Mad Popo StyleSheet 
+ * ========================
+ * 
+ * -----------------
+ * TABLE OF CONTENTS.line-tabs .line-tabs-item .line-tabs-item-link.active
+ * -----------------
+ * 
+ *  1) ALL MEDIA QUERY
+ *  2) GENERAL CSS
+ *  3) TOP HEADER AND MAIN HEADER CSS
+ *  4) BACKGROUND BANNER
+ *  5) TAB SECTION
+ *  6) PRICING TABLE SECTION
+ *  7) WEB BUILDER SECTION
+ *  8) ICON BOX SECTION  
+ *  9) ICON BOX(WEB HOSTING) SECTION
+ * 10) ONE CLICK SECTION
+ * 11) FOOTER SECTION
+ * 12) POPUP MODAL SECTION
+ *    12.1) POPUP MODAL ACCORDION SECTION
+ *    12.2) POPUP MODAL REVIEW ORDER SECTION
+ */
+
+
+
+/* ==================================================
+ *        Font-family
+ * ================================================== */
+
+@font-face 
+{
+  font-family: 'Abzymovies';
+  src: url(./fonts/D-DIN.ttf);
+  src: url(./fonts/D-DIN-Bold.ttf);
+ 
+}
+
+@font-face 
+{ 
+  font-family: 'Abzymovies-reg';
+  src: url(./fonts/d-din.exp.ttf);
+  font-style: normal;
+}
+
+body
+{
+  background: #a671ff;
+  font-family: "Abzymovies", sans-serif;
+}
+
+p,
+.p 
+{
+   font-family: 'Abzymovies-reg', sans-serif;
+}
+
+
+/* ==================================================
+ *        1) ALL MEDIA QUERY
+ * ================================================== */
+
+ @media (max-width: 991.98px) 
+{
+.social-frms{
+    display:none !important;
+}
+  /*Mobile Navbar Panel */
+  .mobile-menu {
+    top: 71px;
+    background: linear-gradient(0deg, #a671ff 0%, #a570ff 100%);
+  }
+
+  .mobile-logo
+  {
+    background-color: #7030a0;
+  }  
+
+  .mobile-logo img 
+  {
+    width: 72px;
+  }
+
+  .logo-section 
+  {
+    display: none !important;
+  }
+  
+  /*Mobile View Call Icon */
+  .phone-icon 
+  {
+    height: 40px;
+    top: 12px;
+    line-height: 1.9;
+    width: 40px;
+  }
+
+  .mega-menu, .sub-menu, .mobile-search, .menu .social 
+  {
+    padding: 0px 15px; 
+  }
+
+  .menu-btn
+  {
+    margin: unset !important;
+  }
+}
+
+
+@media (min-width: 992px)
+{
+  .blog-info-poll-sec .abzy-poll-box
+  {
+    padding-right: 5px;
+  }
+
+  .blog-info-poll-sec .abzy-winner-box
+  {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .blog-info-poll-sec .abzy-tik-tik-box
+  {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .blog-info-poll-sec .abzy-cadbury-box
+  {
+    padding-left: 5px;
+  }
+
+}
+
+@media (min-width: 992px)
+{
+  .bg-darker
+  {
+    padding-right: 0px;
+  }
+
+  .blog-info-sec-01 .blog-info-section .adjust-lft
+  {
+    padding-left: 15px;
+  }
+
+  .blog-info-sec-01 .blog-info-section .adjust-rgt 
+  {
+    padding-right: 15px;
+  }
+
+  .blog-info-social-text .blog-info-social-main .adjust-lft
+  {
+    padding-left: 15px;
+  }
+
+  .blog-info-social-text .blog-info-social-main .adjust-rgt
+  {
+    padding-right: 14px;
+  }
+  
+  .blog-myspace .blog-myspace-main .thambnails-sec .adjust-lft
+  {
+    padding-left: 15px;
+  } 
+  
+  .blog-myspace .blog-myspace-main .thambnails-sec .adjust-rgt
+  {
+    padding-right: 14px;
+  }
+  
+  .blog-info-poll-sec .adjust-lft 
+  {
+    padding-left: 15px;
+  }
+
+  .blog-info-poll-sec .adjust-rgt
+  {
+    padding-right: 14px;
+  }
+
+  .blog-info-sec-01 .blog-info-section .box-height .txt-box-ht
+  {
+    height: 100px;
+  }
+
+  .txt-box-ht-01
+  {
+    height: 60px;
+  }
+
+}
+
+/*character media query*/
+@media (min-width: 991.98px) and (max-width: 1199.98px) 
+{
+  .movie-info .box-text
+  {
+    font-size: 15px !important;
+  }
+
+  .movie-info .box-poster-img
+  {
+    width: 291px !important;
+    height: 190px !important;
+  }
+
+  .commerial-box .commerical-box-img
+  {
+    height: 226px !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .poster-img {
+    height: 180px;
+  }
+
+  /*.bgl-info-cel-bday {
+    padding: 28.6px 10px !important;
+  }*/
+
+  .blog-info-social-text .amul-banner 
+  {
+    width: 310px !important;
+    height: 206px !important;
+  }
+
+  .blog-info-section .blog-banner {
+    width: 100%;
+    height: 225px !important;
+  }
+
+  .blog-info-social-text .celebrity-days .cele-bday-img
+  {
+    height: 180px !important;
+  }
+
+  .blog-info-social-text .sm-banner-text .text-blog {
+    line-height: 1 !important;
+  }
+
+  .blog-myspace .thambnails-sec .btn-myspace
+  {
+    padding-left: 0px !important;
+  }
+
+  .blog-info-poll-sec .same-box
+  {
+    padding: 80px 40px !important;
+  }
+
+  /*.blog-info-poll-sec .tiktok-embed {
+    width: 255px !important;
+    height: 268px !important;
+    margin: 0px !important;
+  }*/
+
+  .blog-info-poll-sec .poll-image
+  {
+    height: 239px !important;
+  }
+
+  .blog-info-social-text .sm-banner-text .sm-banner-text-01 {
+    padding: 10px 0px !important;
+  }
+
+  .btn-view-next
+  {
+    padding: 5px 15px !important;
+    font-size: 15px !important; 
+  }
+
+  .txt-common-ft
+  {
+    font-size: 16px;
+  }
+
+  .thambnails-sec .myspace-thamb .myspace-info .txt-common-ft
+  {
+    font-size: 37px;
+  }
+
+  /*.blog-info-social-text .amul-banner {
+    height: 210px !important;
+  }*/
+
+  .bgl-info-social .blog-text-02 .media .media-body .theme-text-color
+  {
+    font-size: 12px !important;
+  }
+
+  .img-win-box .birthday-img
+  {
+    height: 169px !important;
+  }
+
+  .bday-box .img-win-box .birthday-img
+  {
+    height: 205px !important;
+  }
+
+  .blog-myspace .hvr-txt .txt-on-img {
+    right: 17px !important;
+    width: 97.7% !important;
+  }
+
+  .line-tabs .line-tabs-item .line-tabs-item-link {
+    /*padding: 0px 37px !important;*/
+    width: 174px !important;
+  }
+
+  .tab-content .tab-pane .media-body .theme-text-color
+  {
+    font-size: 12px !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .box-height .txt-box-ht
+  {
+    height: 135px;
+  }
+
+  .txt-box-ht-01
+  {
+    height: 80px;
+  }
+
+  .blog-text-tri p {
+    font-size: 10px !important;
+  }
+
+  .thambnails-sec .table-one-cell .myspace-thamb .my-img-box
+  {
+    width: 215px !important;
+    height: 126px;
+  }
+  .flex-column .rad-box .form-tab .theme-text-color
+  {
+    font-size: 13px;
+  }
+
+}
+
+/*character media query*/
+@media (min-width: 992.98px) and (max-width: 998.98px) 
+{
+  .box01 
+  {
+    padding: 20px 12px !important;
+  }
+
+}
+
+/*character media query*/
+@media (min-width: 375.98px) and (max-width: 576.98px) 
+{
+  .commerial-box .commerical-box-img 
+  {
+    height: 265px !important;
+  }
+}
+
+/*character media query*/
+@media (min-width: 767.98px) and (max-width: 991.98px) 
+{
+
+  .blog-info-sec-01 .blog-info-section .blog-img-sec-adj
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .arr-icon
+  {
+    font-size: 40px !important;
+  }
+
+  .blog-info-poll-sec .box01 
+  {
+    padding: 8px 14px !important;
+  }
+
+  .blog-info-poll-sec .box {
+    padding: 0px 0px !important;
+  }
+
+  .blog-info-poll-sec .box {
+    padding: 10px 10px !important;
+  }
+
+  .blog-info-poll-sec .flex-column
+  {
+   padding: 0px 0px !important;
+  }
+
+  .blog-info-poll-sec .flex-column .rad-box {
+    padding: 16px 15px !important;
+  }
+
+  .blog-info-poll-sec .same-box 
+  {
+    padding: 92.5px 40px !important;
+  }
+
+  .movie-info .box-poster-img {
+    height: 200px !important;
+  }
+
+  .commerial-box .commerical-box-img
+  {
+    height: 295px !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .poster-img {
+    height: 180px !important;
+  }
+
+  .blog-info-section .blog-banner {
+    width: 100%;
+    height: 300px !important;
+  }
+
+  .blog-info-poll-sec .abzy-poll-box .rad-box .txt-common-ft
+  {
+    font-size: 13px !important;
+  }
+
+  .myspace-info .txt-common-ft {
+    font-size: 30px !important;
+  }
+
+  /*.blog-info-social-text .celebrity-days .cele-bday-img
+  {
+    height: 100px !important;
+  }*/
+
+  .img-win-box .birthday-img
+  {
+    height: 197px !important;
+  }
+
+  /*.blog-info-social-text .sm-banner-text .text-blog
+  {
+    line-height: 2.9 !important;
+  }*/
+
+  .myspace-thamb .myspace-info:after
+  {
+    border-top: 3.9rem solid transparent !important;
+    border-bottom: 4rem solid transparent !important;
+    left: 99.55% !important;
+  }
+
+  .blog-info-poll-sec .tit-tok-box
+  {
+    padding-left: 0px !important;
+  }
+
+  .blog-info-social-text .amul-banner {
+    height: 209px;
+    width: 98% !important;
+  }
+
+  .blog-info-social-text .resp-upday
+  {
+    padding-top: 10px !important;
+    padding-left: 0px !important;
+  }
+
+  .blog-info-social-text .social-img {
+    width: 93% !important;
+  }
+
+  .blog-info-social-text .txt-common-ft {
+    font-size: 16px !important;
+  }
+
+  .line-tabs .line-tabs-item .line-tabs-item-link {
+    /*padding: 0px 53px !important;*/
+    width: 206px !important;
+  }
+
+  .blog-info-social-text .social-frms .insta-frame {
+    padding-left: 0px;
+    padding-right: 0px !important;
+  }
+
+  .thambnails-sec .table-one-cell .myspace-thamb .my-img-box {
+    width: 185px !important;
+    height: 126px;
+  }
+  
+}
+
+@media (min-width: 575.98px) and (max-width: 768.98px)
+{
+
+  .blog-info .blog-card .arro-icon-top
+  {
+    transform: translateY(150%) !important;
+  }
+
+  .arr-icon
+  {
+    font-size: 30px !important;
+  }
+
+  .movie-info .box-text {
+    font-size: 16px !important;
+    padding-left: 8px !important;
+  }
+
+  .movie-info .box-poster-img {
+    height: 175px !important;
+  }
+
+  .commerial-box .commerical-box-img
+  {
+    height: 210px !important;
+  }
+
+  .blog-info-section .blog-banner {
+    width: 100%;
+    height: 200px !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .poster-img {
+    height: 180px !important;
+  }
+
+  .card
+  {
+    height: 77% !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .box-color-02 .txt-nxt
+  {
+    font-size: 16px !important;
+    padding-top: 0px !important;
+  }
+
+  .blog-info-social-text .celebrity-days .cele-bday-img
+  {
+    height: 97px !important;
+  }
+
+  .blog-info-social-text .sm-banner-text .text-blog {
+    line-height: 2 !important;
+  }
+
+  .thambnails-sec .myspace-thambnail ul .thamb-list
+  {
+    padding-left: 30px !important;
+  }
+
+  .myspace-thamb .myspace-info:after 
+  {
+    border-top: 3.9rem solid transparent !important;
+    border-bottom: 4rem solid transparent !important;
+  }
+
+  .blog-myspace .hvr-txt .txt-on-img
+  {
+    right: 0px !important;
+    width: 85% !important;
+  }
+
+  .blog-myspace .thambnails-sec .btn-myspace
+  {
+    padding-left: 0px !important;
+  }
+
+  .blog-info-poll-sec .tit-tok-box
+  {
+    padding-left: 0px !important;
+  }
+
+  .blog-info-social-text .sm-banner-text {
+    padding: 23.5px 10px !important;
+  }
+
+  .btn-view-next
+  {
+    padding: 5px 15px !important;
+    font-size: 14px !important;
+  }
+
+  .txt-common-ft
+  {
+    font-size: 10px !important;
+  }
+
+  .table-one-cell .myspace-thamb .myspace-info .txt-common-ft
+  {
+    font-size: 20px !important;
+  }
+
+  .box-color-03 , 
+  .box-color-04
+  {
+    padding: 10px 10px !important;
+  }
+
+  .blog-info-social-text .amul-banner {
+    height: 209px;
+    width: 98% !important;
+  }
+
+  .blog-info-social-text .resp-upday
+  {
+    padding-top: 10px !important;
+    padding-left: 0px !important;
+  }
+
+  .blog-info-social-text .social-img {
+    width: 93% !important;
+  }
+
+  .blog-info-social-text .txt-common-ft {
+    font-size: 16px !important;
+  }
+
+  .bday-box .img-win-box .birthday-img
+  {
+    height: 162px !important;
+  }
+
+  .bgl-info-social .media-body .theme-text-color {
+    font-size: 9px;
+  }
+
+  .img-win-box .birthday-img {
+    height: 186px !important;
+  }
+
+  .line-tabs .line-tabs-item .line-tabs-item-link {
+    /*padding: 0px 27px !important;*/
+    width: 154px !important;
+  }
+
+  .blog-text-tri p {
+    font-size: 10px !important;
+    line-height: 21px !important;
+    padding: 5.5px 5px;
+  }
+} 
+
+@media (min-width: 50px) and (max-width: 575px)
+{
+
+  .blog-info .blog-card .arro-icon-top
+  {
+    transform: translateY(135%) !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .box-height .movie-info .txt-common-ft
+  {
+    font-size: 15px !important;
+  }
+
+  .bgl-info-social .media-body .theme-text-color {
+    font-size: 10px !important;
+  }
+
+  .arr-icon
+  {
+    font-size: 40px !important;
+  }
+
+  .movie-info .box-text {
+    text-align: center;
+  }
+
+  .commerial-box .commerical-box-img
+  {
+    height: 185px !important;
+  }
+
+  .movie-info .box-poster-img {
+    width: 257px !important;
+    height: 150px !important;
+  }
+
+  .blog-social-col {
+    padding-top: 10px !important;
+   /* padding-left: 0px !important;*/
+    padding-right: 0 !important;
+  }
+
+  .blog-info-sec-01 .drop-logo {
+    padding-left: 12px !important;
+  }
+
+  .blog-info-sec-01 .blog-resp-adj , 
+  .blog-info-sec-01 .cmm-box-pad
+  {
+    padding-top: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .blog-info-social-text .celebrity-days-mobile
+  {
+    margin-top: 12px;
+  }
+
+  .blog-info-social-text .blog-text-main
+  {
+    padding-left: 10px !important;
+  }
+
+  .blog-myspace .thambnails-sec .btn-myspace
+  {
+    padding-left: 0px !important;
+  }
+
+  .blog-info-poll-sec .blog-info-poll-adjust
+  {
+    padding: 0px !important;
+    padding-top: 10px !important;
+  }
+
+  /*.blog-info-poll-sec .tiktok-embed {
+    width: 100% !important;
+  }*/
+
+  .blog-info-social-text .social-img
+  {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .poster-img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .blog-info-social-text .social-frms .insta-frame , 
+  .blog-info-social-text .social-frms .youtube-frame , 
+  .blog-info-social-text .social-frms .fb-frame 
+  {
+    padding-top: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .blog-info-social-text .social-frms .amul-resp
+  {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .blog-info-social-text .resp-upday .resp-upday-01
+  {
+    padding-top: 5px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .blog-info-social-text .resp-upday .resp-upday-02
+  {
+    padding-top: 5px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .blog-myspace .hvr-txt .txt-on-img
+  {
+    right: 5px !important;
+    font-size: 11px !important;
+  }
+
+  .line-tabs .line-tabs-item .line-tabs-item-link {
+    padding: 0px 32px !important;
+  }
+
+  .blog-myspace .thambnails-sec .myspace-thamb .myspace-info .img-myspace
+  {
+    display: none;
+  }
+
+  .thambnails-sec .table-one-cell .myspace-thamb .my-img-box {
+    width: 100% !important;
+    height: 50px !important;
+    text-align: center;
+    background: #5f2d90;
+  }
+
+  .line-tabs .line-tabs-item .line-tabs-item-link {
+    width: 100% !important;
+  }
+
+  .line-tabs-item {
+    width: 100% !important;
+  }
+
+  .blog-text-tri p {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding: 5.5px 5px;
+  }
+
+  .blog-info-social-text .amul-banner {
+    height: 207px;
+    width: 100% !important;
+  }
+.mytbl01 .schedule-list .hover-link2, .link-item2 {
+    background-color: #7030a073;
+    margin-right: 0px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px !important;
+    padding: 0px 0px !important;
+    border-radius: 0px !important;
+    text-align: center;
+  }
+  
+  .mygallery .wall-txt .sub-head-contact , 
+  .myaudio .ring-txt .sub-head-contact , 
+  .myvideo .vdo-txt .sub-head-contact
+  {
+      font-size: 28px !important;
+  }
+  
+  .myvideo .myvideo-pg video
+  {
+      width: 300px;
+  }
+  
+  .schedule-list .nav-pills .md-column .nav-link .text-day
+  {
+      font-size: 12px !important;
+  }
+  
+  .mytbl01 .schedule-list .tab-content .tab-pane .mov-dtl .txt-time 
+  {
+    font-size: 25px !important;
+    top: 10px !important;
+  }
+  
+  .about-parallax-container
+  {
+    background: url(../images/About-Banner.png);
+    background-size: 100% 100%;
+    height: 200px !important;
+    position: relative;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+
+  .blog-info-social-text .fb-frame , 
+  .blog-info-social-text .insta-frame , 
+  .blog-info-social-text .youtube-frame
+  {
+    display: block !important;
+  }
+
+  .blog-info-social-text .celebrity-days .cele-bday-img {
+    height: 217px !important;
+  }
+
+  .blog-info-social-text .sm-banner-text .text-blog {
+    line-height: 1.9 !important;
+  }
+
+  .myspace-thamb .myspace-info:after {
+    border-top: 4.3rem solid transparent !important;
+    border-bottom: 3.5rem solid transparent !important;
+  }
+
+  .blog-myspace .myspace-thambnail
+  {
+    padding: 3px 3px !important;
+  }
+
+  .blog-myspace .myspace-thamb .myspace-info h4
+  {
+    font-size: 16px !important;
+  }
+
+  .blog-info-social-text .celebrity-days .cele-bday-img {
+    height: 118px !important;
+  }
+
+  .movie-info .box-poster-img {
+    height: 255px !important;
+  }
+
+  .blog-info-section .blog-banner
+  {
+    height: 266px !important;
+  }
+
+  .card
+  {
+    height: 73% !important;
+  }
+
+  .card .side {
+    border-radius: 0px !important;
+  }
+  
+  .blog-info-sec-01 .blog-info-section .box-color-02 .txt-nxt {
+    font-size: 16px !important;
+    padding-top: 0px !important;
+  }
+
+  .commerial-box .commerical-box-img {
+    height: 250px !important;
+  }
+
+  .blog-info-social-text .sm-banner-text
+  {
+    padding: 19px 10px !important;
+  }
+
+  .btn-view-next
+  {
+    padding: 5px 5px !important;
+    font-size: 12px !important;
+  }
+
+  .blog-info-sec-01 .blog-info-section .box-height .movie-info {
+    height: 100%;
+    padding-top: 0px !important;
+  }
+  
+  .winner .img-win-box .winner-img
+  {
+    width: 342px !important;
+    height: 230px !important;
+  }
+
+  .tit-tok-box .box-03 .winner-img {
+    /* width: 100% !important; */
+    width: 344px !important;
+    height: 253px !important;
+  }
+
+  .bgl-info-social .media-body .theme-text-color {
+    font-size: 12px !important;
+  }
+
+  .bday-box .img-win-box .birthday-img {
+    height: 218px !important;
+  }
+
+  .img-win-box .birthday-img {
+    height: 242px !important;
+  }
+
+  .line-tabs .line-tabs-item .line-tabs-item-link {
+    padding: 0px 10px !important;
+    width: 206px !important;
+  }
+
+  .blog-info-social-text .blog-info-social-main
+  {
+    padding-top: 10px !important;
+  }
+
+  .blog-info-social-text .social-img {
+    height: 400px !important;
+  }
+  
+  .mytbl01 .schedule-list .hover-link2, .link-item2 
+  {
+    padding: 16px 20px !important;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) 
+{
+  .winner .img-win-box .winner-img
+  {
+    height: 211px !important;
+    width: 100%;
+  }
+
+  .tit-tok-box .box-03 .winner-img
+  {
+    height: 268px !important;
+    width: 100%;
+  }
+
+  .blog-info-poll-sec .box-04 .sm-banner-text .winner-img {
+    width: 380px;
+    height: 269px !important;
+  }
+
+  .blog-myspace .hvr-txt .txt-on-img 
+  {
+    right: 17px !important;
+    width: 96% !important;
+  }
+
+  /*.commerial-box .commerical-box-img {
+    height: 186px !important;
+  }*/
+
+  .blog-info-sec-01 .commerial-box .amul-img {
+    height: 235px !important;
+  }
+  
+  .mytbl01 .schedule-list .hover-link2, .link-item2 
+  {
+    padding: 16px 20px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) 
+{
+  .blog-info-sec-01 .commerial-box .amul-img {
+    height: 227px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) 
+{
+  .winner .img-win-box .winner-img, .tit-tok-box .box-03 .winner-img
+  {
+    width: 100% !important;
+    height: 185px !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) 
+{
+  .winner .img-win-box .winner-img
+  {
+    height: 211px !important;
+  }
+
+  .tit-tok-box .box-03 .winner-img
+  {
+    height: 268px !important;
+  }
+
+  .blog-info-poll-sec .box-04 .sm-banner-text .winner-img {
+    width: 380px;
+    height: 269px !important;
+  }
+}
+
+@media (min-width: 992px) 
+{
+  /*.blog-info-sec-01 .commerial-box .amul-img {
+    height: 187px !important;
+  }*/
+}
+
+
+@media (min-width: 50px) and (max-width: 575.98px)
+{
+  /*.blog-info-social-text .celebrity-days .cele-bday-img
+  {
+    width: 100% !important;
+    height: 300px !important;
+  }*/
+
+  .img-win-box .birthday-img {
+    width: 532px !important;
+    height: 260PX !important;
+  }
+
+  .horizon-thambnail .table-two-cell
+  {
+    padding-right: 0px;
+  }
+
+  /*.thambnails-sec .myspace-thambnail ul .thamb-list {
+    padding-left: 40px !important;
+  }
+
+  .myspace-thambnail ul > li > img {
+    width: 50px !important;
+  }*/
+
+  .myspace-thamb .myspace-info:after
+  {
+    content: unset !important;
+  }
+
+  /*.blog-myspace .myspace-thamb .myspace-info h4 , 
+  .blog-myspace .myspace-thamb .myspace-info p
+  {
+    text-align: center !important;
+  }*/
+
+  /*.btn-adjust-small
+  {
+    font-size: 13px !important;
+  }*/
+  
+  /*.btn-view-next
+  {
+    padding: 5px 5px !important;
+    font-size: 14px !important;
+  }*/
+
+  .blog-info-sec-01 .blog-info-section .comm-pad-top-box4
+  {
+    padding-top: 5px;
+  }
+
+  .winner .img-win-box .winner-img , 
+  .tit-tok-box .box-03 .winner-img , 
+  .blog-info-poll-sec .abzy-cadbury-box .sm-banner-text .winner-img
+  {
+    width: 100%;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 991.98px)
+{
+  /*.blog-info-social-text .fb-frame , 
+  .blog-info-social-text .insta-frame , 
+  .blog-info-social-text .youtube-frame
+  {
+    display: none;
+  }*/
+
+  .menu > li > a {
+    padding: 10px 13px 0px 15px !important;
+    font-size: 13px;
+    color: #464846 !important;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 575px)
+{
+  .movie-info .box-poster-img {
+    width: 150px;
+    height: 150px !important;
+  }
+}
+
+
+@media (min-width: 411px)
+{
+  /*.commerial-box .commerical-box-img {
+    height: 237px !important;
+  }*/
+
+  /*.blog-info-poll-sec .box-04 .sm-banner-text .winner-img
+  {
+    width: 380px;
+  }*/
+}
+
+@media (min-width: 375px)
+{
+  /*.commerial-box .commerical-box-img {
+    height: 237px !important;
+  }*/
+}
+
+@media (min-width: 576px)
+{
+  
+  .bg-darker
+  {
+    background: #b066fa;
+  }
+
+  .blog-info-sec-01 .blog-info-section .comm-pad-lft
+  {
+    padding-left: 5px;
+  }
+
+  .blog-info-sec-01 .blog-info-section .comm-pad-rght
+  {
+    padding-right: 5px;
+  }
+
+  .btn-view-next
+  {
+    padding: 5px 30px;
+  }
+
+  .blog-myspace .thambnails-sec .myspace-thamb .myspace-info .my-space-txt
+  {
+    display: none;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 991.98px)
+{
+  .blog-info-social-text .blog-info-social-main , 
+  .blog-myspace .blog-myspace-main , 
+  .blog-info-poll-sec .abzy-winner-box , 
+  .blog-info-poll-sec .abzy-cadbury-box
+  {
+    padding-right: 0px !important;
+  }
+}
+@media (max-width: 1199.98px) 
+{
+  .blog-info-social-main .resp-upday .resp-upday-02 .blog-brd-wt .blog-text-tri 
+  {
+    height: 165px !important;
+  }
+}
+
+/* ==================================================
+ *        2) GENERAL CSS
+ * ================================================== */
+.nav-ht
+{
+  height: 80px;
+}
+
+
+.theme-color 
+{
+  color: #f18521 !important; 
+}
+
+.header-bg
+{
+  background: #7030a0;
+}
+
+.theme-text-color
+{
+  color: #7030a0;
+}
+.theme-text-color:hover
+{
+    font-size:17px;
+}
+.hr-line-sm {
+    width: 40px;
+    border-top: 2px solid #7030a0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #7030a0;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #7030a0;
+    border-color: #0062cc;
+}
+
+.hr-line-md {
+    width: 40px;
+    border-top: 4px solid #7030a0;
+}
+
+.btn-outline-facebook:hover {
+    color: #fff;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 9px 0 rgba(40, 116, 166, 0.5);
+    -moz-box-shadow: 0 1px 9px 0 rgba(40, 116, 166, 0.5);
+    box-shadow: 0 1px 9px 0 rgb(112, 48, 160);
+}
+.flex-column .btn-outline-facebook:hover
+{
+  background: #5f2d90;
+}
+
+.flex-column .btn-outline-facebook a:hover {
+    color: #fff !important;
+    text-decoration: unset;
+}
+.btn-outline-facebook {
+    color: #2874a6;
+    border-color: #7030a0;
+}
+
+.border-divide {
+    border-right: 3px solid #6d5095;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #7030a0;
+    border-color: #005cbf;
+}
+
+.btn-most-rd
+{
+  background-color: #702fa6;
+  border-color: #702fa6 !important;
+}
+
+.btn-most-md {
+  background-color: #702fa6;
+  color: #ffffff;
+  border: 0px;
+}
+
+.btn-most-md:hover 
+{
+  background: #fff;
+  color: #702fa6 !important;
+  border: 1px solid #7030a0 !important;
+}
+
+.btn-most-rd:hover
+{
+  background: #fff;
+  color: #702fa6 !important;
+  border: 1px solid #7030a0 !important;
+}
+
+.brd-btn-bl {
+    border-bottom: 2px solid #d6c2f2;
+}
+
+.blog-gold {
+    border: 5px solid #9a5f1d;
+}
+
+.brd-lft
+{
+  border-left: 1px solid #20a0ff !important;
+  /* margin-left: 15px; */
+  padding-left: 10px;
+  line-height: 0;
+}
+
+a:hover {
+    color: #5f2d90 !important;
+    text-decoration: unset;
+}
+
+.blog-info-section .btn-outline:hover
+{
+  color: #7030a0;
+  box-shadow: 0 1px 9px 0 rgb(112, 48, 160);
+}
+
+.menu > li > a:hover
+{
+  color: #c1a0f8 !important;
+  transform: scale(1.15);
+}
+
+/* ==================================================
+ *        3) TOP HEADER AND MAIN HEADER CSS
+ * ================================================== */
+
+/*Padding Around Main Header Logo*/
+.Nav-logo-section
+{
+    display: block;
+    padding: 30px 10px;
+}
+
+.Nav-logo-section a img
+{
+  width: 130px;
+  height: auto;
+}
+
+.txt-common-ft
+{
+  font-weight: 900;
+  font-family: "Abzymovies";
+}
+
+/*SVG Header and Footer Width*/
+.logo-section a img , .footer-logo img 
+{
+  width: 140px;
+}
+
+.blog-info-sec-01 .drop-logo
+{
+  width: 160px;
+}
+
+/*button top spacing */
+.btn-height
+{
+  margin: 22px 10px 17px;
+  padding: 10px 20px; 
+}
+
+/*Main Header Button*/
+.btn-popo 
+{
+  background-color: #0026a3;
+  color: #fff; 
+}
+
+/*Remove Focus Of All Button*/
+.btn.focus, .btn:focus 
+{
+  outline: unset;
+  box-shadow: unset; 
+}
+
+/*Rounded Button*/
+.btn-round 
+{
+  border-radius: 100px; 
+}
+
+.btn-view
+{
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+
+.menu > li > a
+{
+  color: #fff;
+  text-transform: uppercase;
+  padding: 23px 10px 17px;
+  font-size: 15px;
+}
+
+.blog-info
+{
+  background: #c1a0f8;
+}
+
+.btn-vote {
+    background-color: #7353b0;
+    /* color: #fff; */
+}
+
+.blog-card
+{
+  border: 3px solid #6d5095;
+}
+
+.movie-info .box-text
+{
+  font-size: 16px;
+}
+
+.movie-info .box-poster-img
+{
+  width: 351px;
+  height: 150px;
+}
+
+.blog-info-sec-01 .blog-info-section .poster-img
+{
+  /* width: 240px; */
+  width: 100%;
+  height: 110px;
+}
+
+.box-color-01
+{
+  background: #5f2d90;
+  color: #fff;
+}
+
+.box-color-02
+{
+  background: #6e4399;
+  color: #fff;
+}
+
+.box-color-03
+{
+  background: #784ea1;
+  color: #fff;
+}
+
+.box-color-04
+{
+  background: #865ead;
+  color: #fff;
+}
+
+
+.blog-info-sec-01 .blog-info-section .text-time
+{
+  font-size: 20px;
+}
+
+.blog-info-sec-01 .blog-info-section .text-mname
+{
+  font-size: 14px;
+}
+
+.blog-info-section .blog-banner
+{
+  width: 100%;
+  height: 210px;
+}
+
+.blog-info-sec-01 .commerial-box .amul-img
+{
+  height: 186px;
+}
+
+.card {
+  height: 80%;
+  /*position: absolute;*/
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  /*width: 100%;*/
+  border: unset;
+}
+/*.card:hover {
+  transform: rotateY(180deg);
+}*/
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #fff;
+  color: #7030a0;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.card .back p
+{
+  font-size: 25px;
+  line-height: 6;
+
+}
+
+.hvr-shade
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.hvr-shade .hvr-shade-txt
+{
+    position: absolute;
+    background: rgba(158, 146, 164, 0.76);
+    color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    line-height: 17;
+    text-align: center;
+    font-size: 33px;
+    z-index: 2;
+    left: 0px;
+}
+
+.hvr-shade-txt p {
+    line-height: 2.5;
+    font-size: 35px;
+  
+}
+
+.hvr-shade-txt p span {
+  font-size: 40px;
+  display: block;
+}
+
+.hvr-shade:hover > .hvr-shade-txt {
+    opacity: 1;
+}
+
+.blog-info .blog-card .arro-icon-top
+{
+  transform: translateY(180%);
+}
+
+.arr-icon
+{
+  color: #ccc1da;
+}
+
+.blog-info .blog-card .blog-img-text ul > li > a
+{
+  /*font-size: 25px;*/
+  color: #773ba5;
+}
+
+.blog-card .blog-text-below .hr-line-md
+{
+  border-top: 4px solid #604a7b;
+}
+
+.info-size
+{
+  /*font-size: 20px;*/
+  font-weight: 800;
+}
+
+.btn-outline
+{
+  border-color: #7030a0;
+}
+
+.cele-bday-img
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 154px;
+}
+
+.banner-blog-info h4
+{
+  color: #7334a2;
+  /*font-size: 26px;*/
+}
+
+.bday-box
+{
+  background: linear-gradient(-45deg, #b9893b, #c18e3d, #f0d05f, #f7e282);
+}
+
+.cel-bday-name-clr
+{
+  color: #774d0a;
+}
+
+.cel-bday-date-clr
+{
+  color: #ffd088;
+}
+
+.blog-brd-wt {
+    border: 2px solid #fff;
+}
+
+/*.blog-text-tri
+{
+  padding: 37px 5px 20px 5px;
+}*/
+
+ .blog-info-social-main .resp-upday .resp-upday-02 .blog-brd-wt .blog-text-tri
+  {
+    height: 141px;
+  }
+
+.blog-text-tri p {
+  font-size: 17px;
+  line-height: 34px;
+  padding: 5.5px 5px;
+  }
+
+.blog-info-sec-01 .blog-info-section .box-height .box-dt-tm
+{
+  padding: 12px 3px;
+}
+
+
+.blog-info-social-text .amul-banner
+{
+  height: 204px;
+  width: 378px;
+}
+
+.blog-info-social-text .social-img
+{
+  height: 214px;
+}
+
+.blog-info-social-text .social-frms .youtube-frame:nth-child(1)
+{
+padding-left: 0px;
+  padding-right: 0px;
+}
+.blog-info-social-text .social-frms .youtube-frame:nth-child(2)
+{
+ padding-left: 5px;
+  padding-right: 5px;
+}
+.blog-info-social-text .social-frms .youtube-frame:nth-child(3)
+{
+  padding-left: 0px;
+  padding-right: 4px;
+}
+
+
+/* .blog-info-social-text .social-frms .youtube-frame
+{
+  padding-left: 0px;
+  padding-right: 0px;
+} */
+/* 
+.blog-info-social-text .social-frms .fb-frame
+{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.blog-info-social-text .social-frms .insta-frame
+{
+  padding-left: 0px;
+  padding-right: 4px;
+} */
+/*.banner-blog-info p span
+{
+  font-size: 26px;
+}
+
+
+.banner-blog-info p{
+  font-size: 26px;
+}*/
+
+
+/*.blog-social-section .cel-bday img
+{
+  width: 50px;
+}*/
+
+/*.blog-card-section .poll-img
+{
+  height: 500px;
+}*/
+
+
+/*.blog-card-section .cel-bday .cel-img
+{
+  height: 350px;
+}*/
+
+
+.box
+{
+  /*display: flex;*/
+ /* align-items: center;*/
+  /*justify-content: center;*/
+  background: #fff;
+ /* margin: 20px 0;*/
+ /* min-height: 200px;*/
+  color: #000;
+}
+
+/*.box01
+{
+  padding: 30px 14px;
+}*/
+
+/* .blog-info-poll-sec .box
+{
+  padding: 10px 18px;
+} */
+
+
+.blog-info-poll-sec .same-box
+{
+  padding: 76px 40px;
+}
+
+.blog-info-poll-sec .poll-image
+{
+  height: 240px;
+}
+
+.blog-info-poll-sec .flex-column .rad-box
+{
+  padding: 6px 15px;
+}
+
+.blog-info-poll-sec .box-01 , 
+.blog-info-poll-sec .box-01
+{
+  padding: 12px 15px;
+}
+
+
+/*.blog-poll-sec .same-box-img
+{
+  padding: 10px 50px;
+}*/
+
+.blog-info-poll-sec .common-ht
+{
+  height: 100%;
+}
+
+/* ==================================================
+ *     MYSPACE
+ * ================================================== */
+
+/*.myspace-thamb .myspace-info:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  pointer-events: none;
+  border-top: 4rem solid transparent;
+  border-bottom: 3.8rem solid transparent;
+  border-left: 2.2rem solid #865ead;
+  top: 0%;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  left: 100%;
+  z-index: 2;
+}*/
+
+/*.horizon-thambnail.pricing-green .table-one-cell {
+    background: #5f2d90;
+}*/
+
+.horizon-thambnail .table-one-cell {
+    flex-direction: column;
+    display: flex;
+}
+
+.horizon-thambnail .table-two-cell {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.blog-myspace .thambnails-sec .table-one-cell .myspace-thamb
+{
+  z-index: 9;
+}
+
+.thambnails-sec .table-one-cell .myspace-thamb .my-img-box
+{
+  width: 235px;
+  height: 126px;
+}
+
+.blog-myspace .thambnails-sec .table-one-cell .myspace-thamb .my-img-box .myspace-img
+{
+  width: 240px;
+  height: 125px;
+}
+
+/*.horizon-thambnail .table-one-cell .box
+{
+  background: #5f2d90;
+}*/
+
+.horizon-thambnail .table-two-cell .box
+{
+  background: #11779d
+}
+
+.myspace-thambnail ul > li > img
+{
+  width: 100px;
+}
+
+.thambnails-sec .myspace-thambnail ul .thamb-list
+{
+  padding-left: 80px;
+}
+
+.thambnails-sec .myspace-thambnail 
+{
+  text-align: center;
+}
+
+.blog-myspace .thambnails-sec .btn-myspace
+{
+  padding-left: 80px;
+}
+
+.blog-myspace .my-carol .carousel-inner .carousel-item .cele-carol-img
+{
+  height: 125px;
+}
+
+/*.myspace-thamb .myspace-info:after
+{ 
+
+  border-right: 10px solid #000;
+    border-top: 10px solid #000;
+    width: 81%;
+    height: 90%;
+    display: flex;
+    vertical-align: middle;
+    -webkit-transform: translate(35%, 35%);
+    transform: translate(0%, 15%);
+}
+.myspace-thamb .myspace-info:before
+{
+    border-right: 10px solid #000;
+    border-top: 10px solid #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+}*/
+
+
+.blog-myspace .hvr-txt .txt-on-img {
+    /* color: white; */
+    /* display: inline-block; */
+    /* background-color: rgba(0,0,0,.6); */
+    /* padding: 10px; */
+    /* width: 100%; */
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    background-color: #b6acc1;
+    color: #000;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    width: 97.8%;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: 900;
+}
+
+@media (max-width: 991.98px) and (min-width: 576px)
+{
+  .full-scrn-ipd {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px)
+{
+  .carousel-six.carousel-inner .cloneditem-1, 
+  .carousel-six.carousel-inner .cloneditem-2, 
+  .carousel-six.carousel-inner .cloneditem-3, 
+  .carousel-six.carousel-inner .cloneditem-4, 
+  .carousel-six.carousel-inner .cloneditem-5 
+  {
+    display: none;
+  }
+}
+
+
+/* ==================================================
+ *      blog-info-social-text
+ * ================================================== */
+
+
+/* ==================================================
+ *      Blgo-information-Social-Section
+ * ================================================== */
+
+.blog-card-social .embed-responsive 
+{
+  height: 350px;
+}
+
+.blog-info-social-text .sm-banner-text
+{
+  padding: 13px 10px;
+}
+
+
+.blog-info-social-text .sm-banner-text .sm-banner-text-01
+{
+  padding: 20px 0px;
+}
+
+/*.blog-info-social-text .sm-banner-text .text-blog
+{
+  line-height: 2;
+}*/
+
+.blog-info-social-text .bgl-info-social  .blog-text-02
+{
+  padding: 10px 10px;
+}
+
+
+.blog-info-poll-sec .winner .winner-box .winner-img
+{
+  width: 100px;
+  height: 149px;
+}
+
+.blog-info-poll-sec .winner .winner-box
+{
+  padding: 15px 5px;
+}
+
+.blog-info-social-text .resp-upday .resp-upday-01
+{
+  padding-left: 9px;
+}
+
+
+.line-tabs
+{
+  top: 0px;
+}
+
+.line-tabs .line-tabs-item .line-tabs-item-link {
+    display: inline-block;
+    /*padding: 0px 55px;*/
+    line-height: 48px;
+    height: 48px;
+    width: 209px;
+    color: #fff;
+}
+
+.line-tabs .line-tabs-item .line-tabs-item-link:hover
+{
+  color: #fff!important;
+}
+/*.nav-item a:hover {
+    color: #5f2d90 !important;
+    text-decoration: unset;
+    background: #fff !important;
+}*/
+
+/*.bgl-info-social .box-color-04 .line-tabs .line-tabs-item a:hover
+{
+  background: #fff;
+}*/
+
+/*.box-color-04 .line-tabs .nav-item .nav-link:focus , 
+.box-color-04 .line-tabs .nav-item .nav-link:hover 
+{
+    text-decoration: none;
+    color: #000 !important;
+    background: #fff;
+}*/
+
+.line-tabs .line-tabs-item-link:hover::before
+{
+  background: unset;
+}
+
+.line-tabs-item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    margin-right: 0px !important;
+    color: #865ead;
+}
+
+.line-tab-content {
+    background: #fff;
+    border-top: 0px solid #e5e8ed;
+    padding: 0px;
+}
+
+.line-tabs .line-tabs-item.active
+{
+  color: #865ead !important;
+  background: #fff !important;
+}
+.line-tabs .line-tabs-item
+{
+  color: #fff !important;
+  background: #5e2d90 !important;
+}
+
+
+.line-tabs .line-tabs-item .line-tabs-item-link.active
+{
+  color: #865ead !important;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/*.line-tabs-item.active {
+    color: #fff;
+    background-color: #865ead;
+    cursor: pointer;
+}
+*/
+.line-tabs-item-link.active:before
+{
+  background: unset !important;
+}
+
+
+/* ==================================================
+ *      Blog-Page-Css
+ * ================================================== */
+
+.border-up {
+    border-top: 1px solid #DEDEDE !important;
+}
+
+.comment-box-title {
+    letter-spacing: 1px;
+    color: #313131;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.thecomment .comment-text {
+    margin-left: 40px;
+    position: relative;
+}
+
+/* ==================================================
+ *      About us css
+ * ================================================== */
+
+.about-image
+{
+  margin-bottom: 26px;
+  text-align: center;
+  vertical-align: top;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.about-parallax-container 
+{
+    background: url(../images/About-Banner.png);
+    background-size: 100% 100%;
+    
+    height: 450px;
+    position: relative;
+}
+
+
+.about-overlay-link
+{
+    background: linear-gradient(to bottom, transparent 50%, #000 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+    -webkit-transition: opacity 0.4s ease 0s;
+    -moz-transition: opacity 0.4s ease 0s;
+    -o-transition: opacity 0.4s ease 0s;
+    transition: opacity 0.4s ease 0s;
+    opacity: 0.7;
+}
+
+
+.text-overlay-image .card-body {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    padding-right: 20px;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    width: calc(100% - 20px);
+}
+
+.brand-img img:hover {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: none;
+    filter: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.brand-img img {
+    opacity: .6;
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+}
+
+.sub-head-contact 
+{
+    font-size: 40px;
+    line-height: 0.45;
+}
+
+
+.no-bg-contact-ico {
+  width: 40px;
+  height: 40px;
+  font-size: 30px !important;
+  line-height: 30px !important;
+}
+
+
+.btn-contact 
+{
+    background-color: #7030a0;
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.form-control {
+    height: calc(3rem + 2px);
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+
+
+/* ==================================================
+ *      Contact Us css
+ * ================================================== */
+
+.contact-map .map-sec
+{
+  height: 450px;
+}
+
+.mygallery .img-wrapper {
+  position: relative;
+  margin-top: 15px;
+  
+}
+
+.mygallery .img-wrapper img {
+    width: 100%;
+}
+
+.mygallery .img-wrapper .cele-bday-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.img-wrapper:hover .cele-bday-img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* ==================================================
+ *      Schedule
+ * ================================================== */
+
+/*.mytbl .table-image td
+{
+  vertical-align: middle;
+}
+
+.mytbl .table-image th
+{
+  vertical-align: middle;
+}
+
+.mytbl .table th.lg-column {
+    width: 30%;
+}
+
+.mytbl .table th.md-column {
+    width: 14%;
+}
+
+
+.mytbl .img-thumbnail
+{
+
+  height: 80px;
+  width: 150px;
+}
+
+
+.table-hover tbody tr:hover {
+    color: #212529;
+    background-color: #7030a073;
+}
+
+.mytbl .table .thead-light th {
+    color: #495057;
+    background-color: #7030a073;
+   /* border-color: #dee2e6;
+}
+
+.mytbl .table .thead-light .heading-days .high-light {
+    background: #7030a0;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.mytbl .table .thead-light .heading-days .text-day
+{
+  font-size: 20px;
+}
+
+.mytbl .table .tbl-active .text-time
+{
+  font-size: 30px;
+  color: #000;
+}
+
+
+.txt-movie-name
+{
+  font-size: 20px;
+}
+
+.active {
+    color: #212529;
+    background-color: #7030a073;
+    cursor: pointer;
+}
+
+.mytbl table .heading-days , 
+tbody tr
+{
+  cursor: pointer;
+}
+
+.mytbl .table .tbl-active .txt-show
+{
+  display: block;
+  top: 56px;
+  right: 0;
+  background: #7030a0;
+  font-size: 12px;
+  color: #fff;
+  padding: 4px 10px;
+  position: relative;
+  opacity: 0.8;
+}
+*/
+
+/*.blog-info-poll-sec .tiktok-embed {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: proxima-regular,PingFangSC,sans-serif;
+    font-weight: 400;
+    width: 255px !important;
+    height: 260px !important;
+    margin: 0px !important;
+}*/
+
+.mytbl01 .schedule-list .hover-link2, .link-item2 {
+    background-color: #7030a073;
+    margin-right: 0px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 16px 41px;
+    border-radius: 0px !important;
+    text-align: center;
+}
+
+.mytbl01 .schedule-list .hover-link2.active, .link-item2.active {
+    background-color: #7030a0 !important;
+    color: #fff !important;
+    border: 2px solid #000;
+}
+
+.mytbl01 .schedule-list .hover-link2:hover , .link-item2:hover
+{
+  color: #495057 !important;
+  background-color: #7030a073 !important;
+}
+.mytbl01 .schedule-list .pills-tabs .md-column
+{
+    width: 14%;
+}
+
+.mytbl01 .schedule-list .img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    height: 100px;
+    width: 150px;
+}
+.mytbl01 .schedule-list .ul-col-w
+{
+  width: 102%;
+}
+.mytbl01 .schedule-list .tab-content .tab-pane .mov-dtl .txt-time
+{
+  text-align: center;
+  /* font-size: 50px; */
+  font-size: 30px;
+  color: #000;
+  /* display: flex; */
+  position: relative;
+  top: 25px;
+}
+
+
+.mytbl01 .schedule-list .txt-show {
+    display: block;
+    top: 80px;
+    right: 0;
+    background: #7030a0;
+    font-size: 12px;
+    color: #fff;
+    padding: 4px 10px;
+    position: relative;
+    opacity: 0.8;
+    text-align: center;
+}
+
+
+.mytbl01 .schedule-list .tab-content > .active {
+    color: #212529;
+    background-color: #7030a073;
+    cursor: pointer;
+}
+
+.tab-content .row-no-highlight
+{
+  background: #f1f1f1;
+}
+
+.tab-content .row-no-highlight:hover {
+    color: #212529;
+    background-color: #7030a073;
+}
+.blog-info-poll-sec .embed-responsive-16by9::before {
+    padding-top: 0%;
+}
+
+
+/* ==================================================
+ *      New Css
+ * ================================================== */
+
+.blog-info-sec-01 .blog-info-section .box-height
+{
+  align-items: stretch;
+  /*height: 100%;*/
+}
+
+/*.blog-info-sec-01 .blog-info-section .box-height .movie-info
+{
+  height: 100%;
+}*/
+
+
+/* .blog-custom > .col-sm-6 {
+    padding: 5px;
+}
+
+.blog-info-sec-01 .blog-info-section .blog-custom
+{
+  height: 100%;
+} */
+
+
+
+/* ==================================================
+ *     TermsConditions
+ * ================================================== */
+
+.trm-cond .blog-trm-cond .terms li
+{
+  padding: 15px 15px 15px 10px;
+}
+
+.trm-cond .blog-trm-cond .txt-under
+{
+  text-decoration: underline;
+  text-underline-position: under;
+}
+/* ==================================================
+ *     Blog Post
+ * ================================================== */
+
+.card-body h2
+{
+      font-size: 24px;
+    line-height: 24px;
+}
+
+.card-body h2
+{
+  font-size: 21px;
+}
+.myabout > .card
+{
+  border: 1px solid rgba(0,0,0,.125);
+}
+.card-img-top {  height: 300px; } 
+.banner-img  .card-header
+{
+  background: #7030a0;color: #fff;
+}
+.myabout p
+{
+  font-size: 14px;
+}
+.height267{height: 267px;}
+.about-section p{font-size: 16px;}
+.about-section .page-header h3{font-size: 24px;font-weight: 700;}
+.about-section .text-heading strong{color: #7030a0 ;}
+
+.text-17{font-size:17px;line-height: 34px;}
+.text-14{font-size:14px;line-height: 19px;}
+ 

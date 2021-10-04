@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Append To Page Element Using JavaScript Code &mdash; CKEditor Sample</title>
+	<script src="../../ckeditor.js"></script>
+	 
+	<meta name="description" content="Try the latest sample of CKEditor 4 and learn more about customizing your WYSIWYG editor with endless possibilities.">
+</head>
+<body>
+<h1>Edit Article</h1>
+  <form action="form_handler.php" method="post">
+    <div>
+      <textarea cols="80" rows="10" class="content" name="content"> </textarea>
+      <textarea cols="80" rows="10" class="content" name="content"> </textarea>
+      <script type="text/javascript">
+        CKEDITOR.replace( 'content' );
+      </script>
+      <input type="submit" value="Submit"/>
+    </div>
+  </form>
+  
+  
+	  
+	 
+	  
+</body>
+</html>
